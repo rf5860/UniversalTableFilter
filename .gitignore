@@ -8,3 +8,5 @@ npm-debug.log
 .codio
 .settings
 .vscode
+*.tern-port
+dist/
