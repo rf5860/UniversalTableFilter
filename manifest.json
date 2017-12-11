@@ -1,5 +1,6 @@
 {
     "name": "Universal TableFilter",
+    "version": "1.0",
     "short_name": "utf",
     "manifest_version": 2,
     "description": "Allows table filtering and sorting to be injected into any package",
@@ -7,11 +8,12 @@
         "scripts": ["background.js"],
         "persistent": false
     },
-    "permissions": ["activeTab"],
+    "permissions": ["tabs",  "http://*/*", "https://*/*" ],
+    "web_accessible_resources": [ "style/*", "tf-*.js" ],
     "content_scripts": [{
-        "matches": ["*://*/*"],
-        "js": ["tablefilter.js"],
-        "css": ["colsVisibility.css", "filtersVisibility.css", "tablefilter.css"]
+        "matches": [ "*://*/*" ],
+        "js": ["tablefilter.js", "tf-*.js"],
+        "all_frames": true
     }],
     "browser_action": { "default_title": "Add filters to all tables" }
 }
