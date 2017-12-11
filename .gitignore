@@ -9,4 +9,4 @@ npm-debug.log
 .settings
 .vscode
 *.tern-port
-dist/
+dist/*
