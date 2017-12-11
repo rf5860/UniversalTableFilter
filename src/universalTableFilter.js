@@ -6,7 +6,6 @@
         alternate_rows: true,
         rows_counter: true,
         loader: true,
-// TEMP
         // grid layout customisation
         grid_layout: {
             width: '890px',
@@ -16,7 +15,6 @@
             tbl_head_css_class: 'grd-head-cont',
             tbl_cont_css_class: 'grd-cont'
         },
-// TEMP
         extensions: [
             { name: 'sort' },
             { name: 'filtersVisibility', visible_at_start: false }

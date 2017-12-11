@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     var fs = require('fs');
     var path = require('path');
     var testDir = 'test';
-    var testHost = 'http://localhost:8000/';
+    var testHost = 'http://localhost:8989/';
     var pkg = grunt.file.readJSON('package.json');
     var repo = 'github.com/koalyptus/TableFilter';
     var styleDirDist = 'dist/tablefilter/style/';
@@ -55,7 +55,7 @@ module.exports = function (grunt) {
         connect: {
             server: {
                 options: {
-                    port: 8000,
+                    port: 8989,
                     base: '.'
                 }
             }
