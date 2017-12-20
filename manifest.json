@@ -9,10 +9,10 @@
         "persistent": false
     },
     "permissions": ["tabs",  "http://*/*", "https://*/*" ],
-    "web_accessible_resources": [ "style/*", "tf-*.js" ],
+    "web_accessible_resources": [ "style/*", "tf-*.js", "style/**.css" ],
     "content_scripts": [{
         "matches": [ "*://*/*" ],
-        "js": ["tablefilter.js", "tf-*.js"],
+        "js": [ "tablefilter.js" ],
         "all_frames": true
     }],
     "browser_action": { "default_title": "Add filters to all tables" }
