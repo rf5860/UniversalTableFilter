@@ -66,7 +66,6 @@ module.exports = function (grunt) {
                 src: [
                     '**',
                     '!**/*.styl',
-                    '!**/extensions/**',
                     '!**/mixins/**'
                 ],
                 cwd: 'static/style',

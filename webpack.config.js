@@ -8,7 +8,16 @@ var pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 module.exports = {
     cache: true,
     entry: {
-        'main': path.join(__dirname, '/src/tablefilter.js')
+        'main': [
+            path.join(__dirname, '/src/extensions/sort/sort.js'),
+            path.join(__dirname, '/src/extensions/sort/adapterSortabletable.js'),
+            path.join(__dirname, '/src/extensions/advancedGrid/adapterEzEditTable.js'),
+            path.join(__dirname, '/src/extensions/advancedGrid/advancedGrid.js'),
+            path.join(__dirname, '/src/extensions/colsVisibility/colsVisibility.js'),
+            path.join(__dirname, '/src/extensions/colOps/colOps.js'),
+            path.join(__dirname, '/src/extensions/filtersVisibility/filtersVisibility.js'),
+            path.join(__dirname, '/src/tablefilter.js')
+        ]
     },
     output: {
         path: path.join(__dirname, '/dist/tablefilter'),
