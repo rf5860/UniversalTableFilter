@@ -9,7 +9,7 @@
         status_bar: true,
         loader: true,
         extensions: [
-            { name: 'filtersVisibility' }, { name: 'advancedGrid' }, { name: 'sort' }
+            { name: 'filtersVisibility' }, { name: 'colsVisibility' }, { name: 'sort' }, { name: 'colOps' }
         ],
         base_path: 'chrome-extension://pnpjhhdjihjejnpmedbgngegphcklkag/'
     }).init());
