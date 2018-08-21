@@ -11,3 +11,4 @@ npm-debug.log
 *.tern-port
 dist/*
 tablefilter.zip
+.DS_Store

@@ -1,5 +1,5 @@
 [...document.querySelectorAll('table')]
-    .forEach(table => new TableFilter(table, 0, {
+    .forEach(table => new TableFilter(table, 2, {
         auto_filter: true,
         auto_filter_delay: 300,
         btn_reset: true,
