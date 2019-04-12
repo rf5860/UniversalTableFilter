@@ -1,0 +1,20 @@
+{
+    "name": "Universal TableFilter",
+    "version": "1.5",
+    "short_name": "utf",
+    "manifest_version": 2,
+    "description": "Allows table filtering and sorting to be injected into any package",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": ["tabs",  "http://*/*", "https://*/*" ],
+    "web_accessible_resources": [ "style/themes/mytheme/images/bg_headers.jpg", "style/themes/mytheme/images/btn_previous_page.gif", "style/themes/mytheme/images/btn_last_page.gif", "style/themes/mytheme/images/img_loading.gif", "style/themes/mytheme/images/btn_next_page.gif", "style/themes/mytheme/images/btn_first_page.gif", "style/themes/mytheme/images/bg_infDiv.jpg", "style/themes/mytheme/images/btn_filter.png", "style/themes/downsimple.png", "style/themes/icn_clp.png", "style/themes/btn_clear_filters.png", "style/themes/icn_exp.png", "style/themes/btn_previous_page.gif", "style/themes/btn_last_page.gif", "style/themes/transparent/images/btn_prev_page.gif", "style/themes/transparent/images/btn_last_page.gif", "style/themes/transparent/images/img_loading.gif", "style/themes/transparent/images/icn_clear_filters.png", "style/themes/transparent/images/btn_next_page.gif", "style/themes/transparent/images/btn_first_page.gif", "style/themes/blank.png", "style/themes/btn_next_page.gif", "style/themes/default/images/bg_th.jpg", "style/themes/default/images/btn_previous_page.gif", "style/themes/default/images/btn_last_page.gif", "style/themes/default/images/img_loading.gif", "style/themes/default/images/btn_next_page.gif", "style/themes/default/images/btn_first_page.gif", "style/themes/default/images/btn_over_previous_page.gif", "style/themes/default/images/bg_infDiv.jpg", "style/themes/default/images/btn_over_next_page.gif", "style/themes/default/images/btn_over_first_page.gif", "style/themes/default/images/btn_eraser.gif", "style/themes/default/images/btn_over_eraser.gif", "style/themes/default/images/btn_over_last_page.gif", "style/themes/btn_first_page.gif", "style/themes/icn_filterActive.gif", "style/themes/btn_filter.png", "style/themes/upsimple.png", "style/themes/skyblue/images/btn_prev_page.gif", "style/themes/skyblue/images/btn_last_page.gif", "style/themes/skyblue/images/img_loading.gif", "style/themes/skyblue/images/icn_clear_filters.png", "style/themes/skyblue/images/btn_next_page.gif", "style/themes/skyblue/images/btn_first_page.gif", "style/themes/skyblue/images/bg_skyblue.gif", "style/themes/icn_filter.gif" ],
+    "content_scripts": [{
+        "matches": [ "*://*/*" ],
+        "js": [ "tablefilter.js" ],
+        "css": [ "style/colsVisibility.css", "style/filtersVisibility.css", "style/tablefilter.css", "style/themes/mytheme/mytheme.css", "style/themes/transparent/transparent.css", "style/themes/default/default.css", "style/themes/skyblue/skyblue.css" ],
+        "all_frames": true
+    }],
+    "browser_action": { "default_title": "Add filters to all tables" }
+}
